@@ -2,6 +2,6 @@
   "name": "theme_billy-sunday",
   "version": "1.0.0",
   "scripts": {
-    "dev": "browser-sync start --server --files '*.css'"
+    "dev": "browser-sync start --server --files '*.css' '*.js'"
   }
 }
