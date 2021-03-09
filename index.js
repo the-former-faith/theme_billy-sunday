@@ -1,7 +1,7 @@
 function handleIntersection(entries, o) {
   entries.map((entry) => {
     console.log(entry)
-    if (entry.isIntersecting) {
+    if (entry.intersectionRatio === 0) {
       entry.target.classList.add('visible')
     } else {
       entry.target.classList.remove('visible')
@@ -22,5 +22,4 @@ window.addEventListener("load", (event) => {
 
   frames.forEach(frame => observer.observe(frame))
 
-  console.log(frames)
 }, false);
